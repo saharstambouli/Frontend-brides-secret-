@@ -1,0 +1,22 @@
+.custom-dropdown-toggle {
+    background-color: white !important;
+    color: black !important;
+    border: 1px solid black !important;
+    font-weight: bold;
+    padding: 10px 20px;
+    box-shadow: none !important;
+  }
+  
+  .custom-dropdown-toggle:hover,
+  .custom-dropdown-toggle:focus,
+  .custom-dropdown-toggle:active {
+    background-color: black !important;
+    color: white !important;
+    border: 1px solid black !important;
+    box-shadow: none !important;
+  }
+  
+  .username-bold {
+    font-weight: bold;
+  }
+  

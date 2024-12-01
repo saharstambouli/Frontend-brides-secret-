@@ -1,0 +1,144 @@
+/* General Styling */
+.shoppingCartSection {
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.shoppingCartTabsContainer {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.shoppingBagTableSection {
+  margin: 20px 0;
+}
+
+.shoppingBagTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.shoppingBagTable th, 
+.shoppingBagTable td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.shoppingBagTable th {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.shoppingBagTableImg img {
+  width: 100%;
+  max-width: 80px;
+  height: auto;
+  object-fit: cover;
+}
+
+.actionButtons {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  gap: 15px;
+  flex-direction: row; /* Ensures button and icon are aligned in a row */
+}
+
+.addToCartButton {
+  background-color: #ff6600;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.addToCartButton:hover {
+  background-color: #ff4500;
+}
+
+.removeIcon {
+  cursor: pointer;
+  color: #e63946;
+  font-size: 1.8rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.removeIcon:hover {
+  color: #ff4500;
+  transform: scale(1.2);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .shoppingBagTable,
+  .shoppingBagTable th,
+  .shoppingBagTable td {
+    display: block;
+    width: 100%;
+  }
+
+  .shoppingBagTable th {
+    display: none;
+  }
+
+  .shoppingBagTable td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .shoppingBagTable td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    margin-right: 10px;
+    color: #555;
+  }
+
+  .shoppingBagTableImg img {
+    max-width: 100px;
+    margin-bottom: 10px;
+  }
+
+  .actionButtons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .addToCartButton {
+    padding: 6px 8px;
+    font-size: 14px;
+  }
+
+  .shoppingCartSection {
+    padding: 6px 8px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Ensure vertical stacking */
+  }
+
+  .removeIcon {
+    font-size: 1.5rem;
+  }
+
+  .shoppingBagTable {
+    width: 100%;
+    margin: 0 auto; /* Center table */
+  }
+
+  .shoppingBagTable td,
+  .shoppingBagTable th {
+    text-align: center; /* Center the content */
+  }
+}

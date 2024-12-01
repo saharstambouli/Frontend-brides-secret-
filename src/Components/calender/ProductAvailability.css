@@ -1,0 +1,104 @@
+/* Product Section Styling */
+.productSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Product Gallery */
+.productGallery {
+  display: flex;
+  justify-content: center;
+}
+
+/* Calendar Section */
+.productAvailabilityCalendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px;
+}
+
+/* Calendar Styling */
+.react-calendar {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Date Styles */
+.booked-date {
+  background-color: #ffcccc !important;
+  color: #fff !important;
+}
+
+.available-date {
+  background-color: white !important;
+  color: #000 !important;
+}
+
+/* Cart and Wishlist Section */
+.productCartWishlist {
+  display: flex;
+  justify-content: space-between;  
+  gap: 5px; 
+  width: 100%;
+}
+
+/* Add to Cart Button */
+.productCartBtn button {
+  padding: 15px 50px;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  flex: 1;  /* Ensure both buttons take equal width */
+}
+
+.productCartBtn button:hover {
+  background-color: #333;
+}
+
+/* Add to Wishlist Button */
+.productWishList button {
+  padding: 15px 50px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  flex: 1;  /* Ensure both buttons take equal width */
+}
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 991px) {
+  .productCartWishlist {
+    flex-direction: column;  /* Stack buttons on smaller screens */
+  }
+
+  .productCartBtn button,
+  .productWishList button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .productCartBtn button,
+  .productWishList button {
+    padding: 15px 30px;
+  }
+}
+
+.rightsection {
+  display: flex;
+  flex-direction: column;
+}
+
+.wishlistandcart {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;  /* Add space between the calendar and the buttons */
+}
